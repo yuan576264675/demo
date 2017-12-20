@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>指标配置</title>
+<#include "/header.html">
+</head>
+<body>
+<div id="rrapp">
+	<div class="grid-btn">
+		<div class="form-group col-sm-2">
+			<input type="text" class="form-control" v-model="q.tableName" @keyup.enter="query" placeholder="指标编号">
+		</div>
+		<a class="btn btn-default" @click="query">查询</a>
+		<a class="btn btn-primary" @click="generator"><i class="fa fa-file-code-o"></i>&nbsp;设为无效</a>
+		<a class="btn btn-primary" @click="generator"><i class="fa fa-file-code-o"></i>&nbsp;删除</a>
+	</div>
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+</div>
+
+<script src="${request.contextPath}/statics/js/modules/gen/generator.js?_${.now?long}"></script>
+</body>
+</html>
