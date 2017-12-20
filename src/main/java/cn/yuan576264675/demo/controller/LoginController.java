@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import cn.yuan576264675.demo.entity.User;
-import cn.yuan576264675.demo.shirotest.ShiroTest;
 
 /**   
 * Copyright: Copyright (c) 2017 yuan
