@@ -3,8 +3,8 @@ server:
         uri-encoding: UTF-8
         max-threads: 1000
         min-spare-threads: 30
-    port: 80
-    context-path: 
+    port: 8080
+    context-path: /yuan
 spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
