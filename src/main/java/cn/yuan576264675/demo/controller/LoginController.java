@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import cn.yuan576264675.demo.entity.User;
+import lombok.extern.slf4j.Slf4j;
 
 /**   
 * Copyright: Copyright (c) 2017 yuan
@@ -33,10 +34,9 @@ import cn.yuan576264675.demo.entity.User;
 * 2017年12月15日     chenjiangfeng     v1.0.0               修改原因
 */
 @RestController
+@Slf4j
 public class LoginController {
 
-	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
-	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(User user) {
 		
@@ -44,7 +44,7 @@ public class LoginController {
 		String pwd = user.getPwd();
 		
 		if(StringUtils.isBlank(name) || StringUtils.isBlank(pwd)){
-			logger.error("用户名密码为空");
+			log.error("用户名密码为空");
 			return "login";
 		}
 		

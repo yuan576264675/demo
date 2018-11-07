@@ -8,6 +8,7 @@
  */
 package cn.yuan576264675.demo.shirotest;
 
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -37,7 +38,7 @@ import org.slf4j.LoggerFactory;
 public class ShiroTest {
 
 	private static final Logger logger = LoggerFactory.getLogger(ShiroTest.class);
-	
+	SqlSessionFactory
 	@Test
 	public void testShiro() {
 		// 1、获取SecurityManager工厂，此处使用Ini配置文件初始化SecurityManager

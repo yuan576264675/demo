@@ -6,6 +6,10 @@ server:
     port: 8080
     context-path: /yuan
 spring:
+    elasticsearch: 
+        jest: 
+            uris: http://172.16.1.242:9200 
+            read-timeout: 10000 
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
@@ -38,3 +42,10 @@ spring:
                 wall:
                     config:
                         multi-statement-allow: true
+    
+                        
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  typeAliasesPackage: cn.yuan576264675.demo.sql
+

@@ -8,8 +8,6 @@
  */
 package cn.yuan576264675.demo.entity.enums;
 
-import java.util.Map;
-
 /**   
 * Copyright: Copyright (c) 2017 yuan
 * 
